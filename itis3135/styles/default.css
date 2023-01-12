@@ -1,0 +1,47 @@
+:root{
+/* Acquired from coolio.io */
+--russian-violet: #38023bff;
+--lavender-floral: #a288e3ff;
+--beau-blue: #bbd5edff;
+--light-cyan: #cefdffff;
+--tea-green: #ccffcbff;
+}
+
+body
+{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:#a288e3ff;
+    background-color:#cefdffff;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+header,footer
+{
+    text-align: center;
+}
+
+h1,h2,h3
+{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:#38023bff;
+    text-align: center;
+}
+
+a
+{
+    text-decoration: none;
+    color:#ccafcbff;
+    font-weight: bold;
+}
+
+a:hover
+{
+    text-decoration: underline;
+    color:#ccafcbaf;
+}
+
+nav
+{
+    text-align: center;
+}
