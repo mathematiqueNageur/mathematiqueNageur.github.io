@@ -1,5 +1,5 @@
 :root{
-/* Acquired from coolio.io */
+/* Acquired from coolors.co */
 --russian-violet: #38023bff;
 --lavender-floral: #a288e3ff;
 --beau-blue: #bbd5edff;
@@ -12,13 +12,21 @@ body
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color:#a288e3ff;
     background-color:#cefdffff;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 header,footer
 {
+    margin-top: 5%;
+    margin-bottom: 5%;
     text-align: center;
+}
+
+main
+{
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 h1,h2,h3
@@ -26,6 +34,7 @@ h1,h2,h3
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color:#38023bff;
     text-align: center;
+    line-height: 0px;
 }
 
 a
@@ -39,6 +48,16 @@ a:hover
 {
     text-decoration: underline;
     color:#ccafcbaf;
+}
+
+figure
+{
+    text-align: center;
+}
+
+figcaption
+{
+    font-style: italic;
 }
 
 nav
