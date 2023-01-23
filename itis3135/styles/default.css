@@ -10,7 +10,7 @@
 body
 {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color:#a288e3ff;
+    color:#5B2FCA;
     background-color:#cefdffff;
     margin-left: 15%;
     margin-right: 15%;
@@ -40,14 +40,14 @@ h1,h2,h3
 a
 {
     text-decoration: none;
-    color:#ccafcbff;
+    color:#644064ff;
     font-weight: bold;
 }
 
 a:hover
 {
     text-decoration: underline;
-    color:#ccafcbaf;
+    color:#644064af;
 }
 
 figure
