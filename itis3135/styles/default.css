@@ -27,7 +27,13 @@ main {
     margin-right: 10%;
 }
 
-h1,
+h1 {
+    font-family: 'Roboto+Slab', serif;
+    color: #38023bff;
+    text-align: center;
+    line-height: 0px;
+}
+
 h2,
 h3 {
     font-family: 'Ubuntu', sans-serif;
