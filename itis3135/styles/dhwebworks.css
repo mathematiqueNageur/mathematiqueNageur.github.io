@@ -1,16 +1,7 @@
-:root {
-    /* Acquired from coolors.co */
-    --russian-violet: #38023bff;
-    --lavender-floral: #a288e3ff;
-    --beau-blue: #bbd5edff;
-    --light-cyan: #cefdffff;
-    --tea-green: #ccffcbff;
-}
-
 body {
-    font-family: 'Ubuntu', sans-serif;
-    color: #5B2FCA;
-    background-color: #cefdffff;
+    font-family: 'Montserrat', sans-serif;
+    color: lavender;
+    background-color: grey;
     margin-left: 15%;
     margin-right: 15%;
 }
@@ -30,21 +21,21 @@ main {
 h1,
 h2,
 h3 {
-    font-family: 'Ubuntu', sans-serif;
-    color: #38023bff;
+    font-family: 'Montserrat', sans-serif;
+    color: plum;
     text-align: center;
     line-height: 0px;
 }
 
 a {
     text-decoration: none;
-    color: #644064ff;
+    color: peachpuff;
     font-weight: bold;
 }
 
 a:hover {
     text-decoration: underline;
-    color: #644064af;
+    color: palevioletred;
 }
 
 figure {
