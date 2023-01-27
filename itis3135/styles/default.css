@@ -65,24 +65,24 @@ nav {
     text-align: center;
 }
 
-table {
+table.ct {
     background-color: rgb(139, 235, 238);
     text-align: center;
     border: 2px solid black;
     border-spacing: 0px;
 }
 
-td,th {
+td.ctd,th.cth {
     border: 1px solid black;
     padding-left: 4pt;
     padding-right: 4pt;
 }
 
-tr:nth-child(even) {
+tr.ctr:nth-child(even) {
     background-color: rgb(182, 233, 235);
 }
 
-th {
+th.cth {
     background-color: #5B2FCA;
     color: #cefdffff;
 }
