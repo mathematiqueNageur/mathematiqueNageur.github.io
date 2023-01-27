@@ -64,3 +64,16 @@ figcaption {
 nav {
     text-align: center;
 }
+
+table {
+    background-color: rgb(139, 235, 238);
+}
+
+tr:nth-child(even) {
+    background-color: rgb(182, 233, 235);
+}
+
+th {
+    background-color: #5B2FCA;
+    color: #cefdffff;
+}
