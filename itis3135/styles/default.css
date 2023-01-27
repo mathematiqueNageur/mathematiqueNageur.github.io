@@ -68,6 +68,14 @@ nav {
 table {
     background-color: rgb(139, 235, 238);
     text-align: center;
+    border: 2px solid black;
+    border-spacing: 0px;
+}
+
+td,th {
+    border: 1px solid black;
+    padding-left: 4pt;
+    padding-right: 4pt;
 }
 
 tr:nth-child(even) {
@@ -77,5 +85,4 @@ tr:nth-child(even) {
 th {
     background-color: #5B2FCA;
     color: #cefdffff;
-    b
 }
