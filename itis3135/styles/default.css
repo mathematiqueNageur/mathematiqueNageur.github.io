@@ -86,3 +86,28 @@ th.cth {
     background-color: #5B2FCA;
     color: #cefdffff;
 }
+
+button.formbutton {
+    background-color: rgb(39, 38, 38);
+    color: rgb(255, 0, 0);
+    font-size: medium;
+    font-weight: bold;
+}
+
+button.formbutton:hover {
+    background-color: rgb(253, 1, 1);
+    color: rgb(0, 0, 0);
+    font-size: large;
+}
+
+input.formtextbox {
+    color: rgb(250, 2, 2);
+    font-size: large;
+}
+
+select.formdropbox {
+    font-size: large;
+}
+legend.formlegends {
+    font-size: larger;
+}
