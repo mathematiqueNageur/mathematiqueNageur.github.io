@@ -42,7 +42,7 @@ h3 {
     line-height: 0px;
 }
 
-a {
+a,a:visited {
     text-decoration: none;
     color: #644064ff;
     font-weight: bold;
