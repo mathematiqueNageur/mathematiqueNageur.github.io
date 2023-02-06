@@ -11,15 +11,13 @@ body {
     font-family: 'Ubuntu', sans-serif;
     color: #5B2FCA;
     background-color: #cefdffff;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin:auto 15%;
 }
 
 header,
 footer {
-    margin-top: 5%;
-    margin-bottom: 5%;
     text-align: center;
+    margin: 5% auto;
 }
 
 main {
@@ -32,6 +30,7 @@ h2 {
     font-family: 'Roboto+Slab', serif;
     color: #38023bff;
     text-align: center;
+    margin: 1em auto;
     line-height: 0px;
 }
 
@@ -39,6 +38,7 @@ h3 {
     font-family: 'Ubuntu', sans-serif;
     color: #38023bff;
     text-align: center;
+    margin: 1em auto;
     line-height: 0px;
 }
 
@@ -53,8 +53,17 @@ a:hover {
     color: #644064af;
 }
 
+a.validationbutton:hover {
+    text-decoration: none;
+}
+
 figure {
     text-align: center;
+    margin: 1em auto;
+}
+
+img {
+    margin: 0 auto;
 }
 
 figcaption {
@@ -63,6 +72,7 @@ figcaption {
 
 nav {
     text-align: center;
+    margin: 1em auto;
 }
 
 table.ct {
