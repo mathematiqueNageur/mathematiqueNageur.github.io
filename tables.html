@@ -94,6 +94,7 @@
             <h3>Employee Data in Complex Table</h3>
             <table class="ct">
                 <caption>Employee Information</caption>
+                <thead>
                 <tr class="ctr">
                     <th class="cth" scope="col" headers="none" id="col0">Job</th>
                     <th class="cth" scope="col" headers="none" id="col1">Name</th>
@@ -101,15 +102,17 @@
                     <th class="cth" scope="col" headers="none" id="col3">Years of Service</th>
                     <th class="cth" scope="col" headers="none" id="col4">Salary</th>
                 </tr>
+                </thead>
+                <tbody>
                 <tr class="ctr">
-                    <th class="cth" scope="row" headers="col0" id="row0">Overlord</th>
+                    <td class="cth" scope="row" headers="col0" id="row0">Overlord</td>
                     <td class="ctd" headers="col1 row0">Dale Hagen</td>
                     <td class="ctd" headers="col2 row0">dhagen3@uncc.edu</td>
                     <td class="ctd" headers="col3 row0">25</td>
                     <td class="ctd" headers="col4 row0">$840,000</td>
                 </tr>
                 <tr class="ctr">
-                    <th class="cth" rowspan="3" scope="rowgroup" headers="col0" id="row1t3">Senior Minions</th>
+                    <td class="cth" rowspan="3" scope="rowgroup" headers="col0" id="row1t3">Senior Minions</td>
                     <td class="ctd" headers="col1 row1t3">Smee</td>
                     <td class="ctd" headers="col2 row1t3">bestFirstMate@minions.dhwebworks.net</td>
                     <td class="ctd" headers="col3 row1t3">70</td>
@@ -128,7 +131,7 @@
                     <td class="ctd" headers="col4 row1t3">$460,000</td>
                 </tr>
                 <tr class="ctr">
-                    <th class="cth" rowspan="3" scope="rowgroup" headers="col0" id="row4t6">Minions</th>
+                    <td class="cth" rowspan="3" scope="rowgroup" headers="col0" id="row4t6">Minions</td>
                     <td class="ctd" headers="col1 row4t6">Kaa Hiss</td>
                     <td class="ctd" headers="col2 row4t6">hypnosnake@minions.dhwebworks.net</td>
                     <td class="ctd" headers="col3 row4t6">56</td>
@@ -147,10 +150,11 @@
                     <td class="ctd" headers="col4 row4t6">$100,500</td>
                 </tr>
                 <tr class="ctr">
-                    <th class="cth" colspan="3" scope="row" headers="none" id="row7">Total Years of Service and Annual Salary:</th>
+                    <td class="cth" colspan="3" scope="row" headers="none" id="row7">Total Years of Service and Annual Salary:</td>
                     <td class="ctd" headers="row7">268</td>
                     <td class="ctd" headers="row7">$2,748,500</td>
                 </tr>
+            </tbody>
             </table>
         </figure>
     </main>
