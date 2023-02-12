@@ -121,3 +121,22 @@ select.formdropbox {
 legend.formlegends {
     font-size: larger;
 }
+
+input.scriptpagetextbox {
+    display: block;
+    margin: auto;
+}
+
+fieldset.scriptpagefield {
+    margin: auto;
+    width: auto;
+    min-width: 300px;
+    max-width: 500px;
+}
+div.scriptpagediv {
+    margin: auto;
+    width: auto;
+    min-width: 300px;
+    max-width: 500px;
+    text-align: center;
+}
