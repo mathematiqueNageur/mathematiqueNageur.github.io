@@ -12,6 +12,7 @@ body {
     color: #5B2FCA;
     background-color: #cefdffff;
     margin:auto 15%;
+    max-width: 960px;
 }
 
 header,
@@ -27,7 +28,7 @@ main {
 
 h1,
 h2 {
-    font-family: 'Roboto+Slab', serif;
+    font-family: 'Roboto+Slab', sans-serif;
     color: #38023bff;
     text-align: center;
     margin: 1em auto;

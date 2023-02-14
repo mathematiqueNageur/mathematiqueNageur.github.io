@@ -2,6 +2,15 @@ function testscript() {
     window.alert("Scripty Script!");
 }
 
+/**
+ * For headers/footers
+ */
+
+//TBA
+
+/**
+ * For firstscripts.html
+ */
 function greeting() {
     const NAME = document.getElementById("guestname").value;
     const MOOD = document.getElementById("guestfeeling").value;
@@ -74,7 +83,7 @@ function superiorBeverage() {
         case "vodka":
             output = "...Who hurt you?";
             break;
-    
+
         default:
             output = "Well, I didn't expect that answer...";
             break;
