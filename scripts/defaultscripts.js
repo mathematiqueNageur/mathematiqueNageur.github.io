@@ -3,12 +3,6 @@ function testscript() {
 }
 
 /**
- * For headers/footers
- */
-
-//TBA
-
-/**
  * For firstscripts.html
  */
 function greeting() {
