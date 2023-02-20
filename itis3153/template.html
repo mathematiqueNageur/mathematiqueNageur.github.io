@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <nav>Nav Links Here</nav>
+        <nav id="headerSiteLinks">Nav Links Here</nav>
         <h1>Template with Navigation</h1>
     </header>
     <main>
@@ -23,7 +23,9 @@
     </footer>
     <script>
         $(function() {
-
+            console.log("made it here");
+            const pathname = String(location.pathname.split("/").splice(-1));
+            console.log(pathname);
         });
     </script>
 </body>
