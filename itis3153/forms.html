@@ -8,45 +8,35 @@
     <title>Forms || Dale Hagen's Dapper Hippo</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400&display=swap"
-        rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/default.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 </head>
 
 <body>
     <header>
-        <h1><img src="images/dapperhippomini.png" alt="Small Hippo">Dale Hagen's Dapper Hippo || ITIS3135<img src="images/dapperhippominiright.png" alt="Small Hippo"></h1>
-        <nav>
-            [<a href="./">Home</a>]
-            [<a href="introduction.html">Introduction</a>]
-            [<a href="contract.html">Contract</a>]
-            [<a href="tables.html">Tables</a>]
-            [<a href="forms.html">Forms</a>]
-            [<a href="website_evaluations.html">Website Evaluations</a>]
-            [<a href="stuff/Wh@t%20The%20CRAP.htm">CRAPPY Webpage</a>]
-            [<a href="firstscripts.html">First Scripts</a>]
-        </nav>
+        <h1><img src="images/dapperhippomini.png" alt="Small Hippo">Dale Hagen's Dapper Hippo || ITIS3135<img
+                src="images/dapperhippominiright.png" alt="Small Hippo"></h1>
+        <nav class="navbar" id="headerSiteLinks">Nav Links Here</nav>
     </header>
     <main>
         <h2>Forms</h2>
         <form action="#">
             <fieldset>
                 <legend class="formlegends">Name:</legend>
-                <input type="text" name="clientname" class="formtextbox" size="100" minlength="1" maxlength="128" required>
+                <input type="text" name="clientname" class="formtextbox" size="100" minlength="1" maxlength="128"
+                    required>
             </fieldset>
             <fieldset>
                 <legend class="formlegends">Phone Number:</legend>
-                <input type="tel" name="clientphonenumber" class="formtextbox" placeholder="xxxx-xxx-xxxx" size="10" minlength="10"
-                    maxlength="11" required>
+                <input type="tel" name="clientphonenumber" class="formtextbox" placeholder="xxxx-xxx-xxxx" size="10"
+                    minlength="10" maxlength="11" required>
             </fieldset>
             <fieldset>
                 <legend class="formlegends">Email Address:</legend>
-                <input type="email" name="clientemail" class="formtextbox" placeholder="youremail@mail.com" minlength="10" maxlength="128"
-                    required>
+                <input type="email" name="clientemail" class="formtextbox" placeholder="youremail@mail.com"
+                    minlength="10" maxlength="128" required>
             </fieldset>
             <fieldset>
                 <legend class="formlegends">What skillsets do your minions need?:</legend>
@@ -113,14 +103,7 @@
         </form>
     </main>
     <footer>
-        <nav>
-            [<a href="https://webpages.charlotte.edu/dhagen3/">CIT Webspace</a>]
-            [<a href="https://github.com/mathematiqueNageur">My GitHub</a>]
-            [<a href="https://mathematiqueNageur.github.io">GitHub.io</a>]
-            [<a href="https://www.freecodecamp.org/dxhagen">freecodecamp</a>]
-            [<a href="https://www.codecademy.com/profiles/dxhagen">Codecademy</a>]
-            [<a href="https://www.linkedin.com/in/dalehagen/">LinkedIn</a>]
-        </nav>
+        <nav class="navbar" id="footerLinks">Website Links Here</nav>
         <p>
             Designed by the &copy; <a href="dhwebworks.net/">Dapper Hippo</a>.
         </p>
@@ -129,12 +112,14 @@
                 <img src="images/button_validation_html5.png" width="88" height="31" alt="Validate webpage HTML.">
             </a>
 
-            <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css" class="validationbutton">
+            <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css"
+                class="validationbutton">
                 <img src="images/button_validation_css.png" width="88" height="31" alt="Validate webpage CSS.">
             </a>
 
         </p>
     </footer>
+    <script src="scripts/hfscripts.js"></script>
 </body>
 
 </html>

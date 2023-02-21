@@ -8,28 +8,17 @@
     <title>Tables || Dale Hagen's Dapper Hippo</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400&display=swap"
-        rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/default.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 </head>
 
 <body>
     <header>
-        <h1><img src="images/dapperhippomini.png" alt="Small Hippo">Dale Hagen's Dapper Hippo || ITIS3135<img src="images/dapperhippominiright.png" alt="Small Hippo"></h1>
-        <nav>
-            [<a href="./">Home</a>]
-            [<a href="introduction.html">Introduction</a>]
-            [<a href="contract.html">Contract</a>]
-            [<a href="tables.html">Tables</a>]
-            [<a href="forms.html">Forms</a>]
-            [<a href="website_evaluations.html">Website Evaluations</a>]
-            [<a href="stuff/Wh@t%20The%20CRAP.htm">CRAPPY Webpage</a>]
-            [<a href="firstscripts.html">First Scripts</a>]
-        </nav>
+        <h1><img src="images/dapperhippomini.png" alt="Small Hippo">Dale Hagen's Dapper Hippo || ITIS3135<img
+                src="images/dapperhippominiright.png" alt="Small Hippo"></h1>
+        <nav class="navbar" id="headerSiteLinks">Nav Links Here</nav>
     </header>
     <main>
         <h2>
@@ -95,78 +84,72 @@
             <table class="ct">
                 <caption>Employee Information</caption>
                 <thead>
-                <tr class="ctr">
-                    <th class="cth" scope="col" headers="none" id="col0">Job</th>
-                    <th class="cth" scope="col" headers="none" id="col1">Name</th>
-                    <th class="cth" scope="col" headers="none" id="col2">Email</th>
-                    <th class="cth" scope="col" headers="none" id="col3">Years of Service</th>
-                    <th class="cth" scope="col" headers="none" id="col4">Salary</th>
-                </tr>
+                    <tr class="ctr">
+                        <th class="cth" scope="col" headers="none" id="col0">Job</th>
+                        <th class="cth" scope="col" headers="none" id="col1">Name</th>
+                        <th class="cth" scope="col" headers="none" id="col2">Email</th>
+                        <th class="cth" scope="col" headers="none" id="col3">Years of Service</th>
+                        <th class="cth" scope="col" headers="none" id="col4">Salary</th>
+                    </tr>
                 </thead>
                 <tbody>
-                <tr class="ctr">
-                    <td class="cth" scope="row" headers="col0" id="row0">Overlord</td>
-                    <td class="ctd" headers="col1 row0">Dale Hagen</td>
-                    <td class="ctd" headers="col2 row0">dhagen3@uncc.edu</td>
-                    <td class="ctd" headers="col3 row0">25</td>
-                    <td class="ctd" headers="col4 row0">$840,000</td>
-                </tr>
-                <tr class="ctr">
-                    <td class="cth" rowspan="3" scope="rowgroup" headers="col0" id="row1t3">Senior Minions</td>
-                    <td class="ctd" headers="col1 row1t3">Smee</td>
-                    <td class="ctd" headers="col2 row1t3">bestFirstMate@minions.dhwebworks.net</td>
-                    <td class="ctd" headers="col3 row1t3">70</td>
-                    <td class="ctd" headers="col4 row1t3">$530,000</td>
-                </tr>
-                <tr class="ctr">
-                    <td class="ctd" headers="col1 row1t3">Kronk</td>
-                    <td class="ctd" headers="col2 row1t3">senorSpinachPuffs@minions.dhwebworks.net</td>
-                    <td class="ctd" headers="col3 row1t3">23</td>
-                    <td class="ctd" headers="col4 row1t3">$600,000</td>
-                </tr>
-                <tr class="ctr">
-                    <td class="ctd" headers="col1 row1t3">Vizzini</td>
-                    <td class="ctd" headers="col2 row1t3">inconceivableSicilian@minions.dhwebworks.net</td>
-                    <td class="ctd" headers="col3 row1t3">36</td>
-                    <td class="ctd" headers="col4 row1t3">$460,000</td>
-                </tr>
-                <tr class="ctr">
-                    <td class="cth" rowspan="3" scope="rowgroup" headers="col0" id="row4t6">Minions</td>
-                    <td class="ctd" headers="col1 row4t6">Kaa Hiss</td>
-                    <td class="ctd" headers="col2 row4t6">hypnosnake@minions.dhwebworks.net</td>
-                    <td class="ctd" headers="col3 row4t6">56</td>
-                    <td class="ctd" headers="col4 row4t6">$120,000</td>
-                </tr>
-                <tr class="ctr">
-                    <td class="ctd" headers="col1 row4t6">LeFou</td>
-                    <td class="ctd" headers="col2 row4t6">gastonBFF@minions.dhwebworks.net</td>
-                    <td class="ctd" headers="col3 row4t6">32</td>
-                    <td class="ctd" headers="col4 row4t6">$98,000</td>
-                </tr>
-                <tr class="ctr">
-                    <td class="ctd" headers="col1 row4t6">Pain and Panic</td>
-                    <td class="ctd" headers="col2 row4t6">impsForHire@minions.dhwebworks.net</td>
-                    <td class="ctd" headers="col3 row4t6">26</td>
-                    <td class="ctd" headers="col4 row4t6">$100,500</td>
-                </tr>
-                <tr class="ctr">
-                    <td class="cth" colspan="3" scope="row" headers="none" id="row7">Total Years of Service and Annual Salary:</td>
-                    <td class="ctd" headers="row7">268</td>
-                    <td class="ctd" headers="row7">$2,748,500</td>
-                </tr>
-            </tbody>
+                    <tr class="ctr">
+                        <td class="cth" scope="row" headers="col0" id="row0">Overlord</td>
+                        <td class="ctd" headers="col1 row0">Dale Hagen</td>
+                        <td class="ctd" headers="col2 row0">dhagen3@uncc.edu</td>
+                        <td class="ctd" headers="col3 row0">25</td>
+                        <td class="ctd" headers="col4 row0">$840,000</td>
+                    </tr>
+                    <tr class="ctr">
+                        <td class="cth" rowspan="3" scope="rowgroup" headers="col0" id="row1t3">Senior Minions</td>
+                        <td class="ctd" headers="col1 row1t3">Smee</td>
+                        <td class="ctd" headers="col2 row1t3">bestFirstMate@minions.dhwebworks.net</td>
+                        <td class="ctd" headers="col3 row1t3">70</td>
+                        <td class="ctd" headers="col4 row1t3">$530,000</td>
+                    </tr>
+                    <tr class="ctr">
+                        <td class="ctd" headers="col1 row1t3">Kronk</td>
+                        <td class="ctd" headers="col2 row1t3">senorSpinachPuffs@minions.dhwebworks.net</td>
+                        <td class="ctd" headers="col3 row1t3">23</td>
+                        <td class="ctd" headers="col4 row1t3">$600,000</td>
+                    </tr>
+                    <tr class="ctr">
+                        <td class="ctd" headers="col1 row1t3">Vizzini</td>
+                        <td class="ctd" headers="col2 row1t3">inconceivableSicilian@minions.dhwebworks.net</td>
+                        <td class="ctd" headers="col3 row1t3">36</td>
+                        <td class="ctd" headers="col4 row1t3">$460,000</td>
+                    </tr>
+                    <tr class="ctr">
+                        <td class="cth" rowspan="3" scope="rowgroup" headers="col0" id="row4t6">Minions</td>
+                        <td class="ctd" headers="col1 row4t6">Kaa Hiss</td>
+                        <td class="ctd" headers="col2 row4t6">hypnosnake@minions.dhwebworks.net</td>
+                        <td class="ctd" headers="col3 row4t6">56</td>
+                        <td class="ctd" headers="col4 row4t6">$120,000</td>
+                    </tr>
+                    <tr class="ctr">
+                        <td class="ctd" headers="col1 row4t6">LeFou</td>
+                        <td class="ctd" headers="col2 row4t6">gastonBFF@minions.dhwebworks.net</td>
+                        <td class="ctd" headers="col3 row4t6">32</td>
+                        <td class="ctd" headers="col4 row4t6">$98,000</td>
+                    </tr>
+                    <tr class="ctr">
+                        <td class="ctd" headers="col1 row4t6">Pain and Panic</td>
+                        <td class="ctd" headers="col2 row4t6">impsForHire@minions.dhwebworks.net</td>
+                        <td class="ctd" headers="col3 row4t6">26</td>
+                        <td class="ctd" headers="col4 row4t6">$100,500</td>
+                    </tr>
+                    <tr class="ctr">
+                        <td class="cth" colspan="3" scope="row" headers="none" id="row7">Total Years of Service and
+                            Annual Salary:</td>
+                        <td class="ctd" headers="row7">268</td>
+                        <td class="ctd" headers="row7">$2,748,500</td>
+                    </tr>
+                </tbody>
             </table>
         </figure>
     </main>
     <footer>
-        <nav>
-            [<a href="https://webpages.charlotte.edu/dhagen3/">CIT Webspace</a>]
-            [<a href="https://github.com/mathematiqueNageur">My GitHub</a>]
-            [<a href="https://mathematiqueNageur.github.io">GitHub.io</a>]
-            [<a href="https://www.freecodecamp.org/dxhagen">freecodecamp</a>]
-            [<a href="https://www.codecademy.com/profiles/dxhagen">Codecademy</a>]
-            [<a href="https://www.linkedin.com/in/dalehagen/">LinkedIn</a>]
-        </nav>
+        <nav class="navbar" id="footerLinks">Website Links Here</nav>
         <p>
             Designed by the &copy; <a href="dhwebworks.net/">Dapper Hippo</a>.
         </p>
@@ -175,12 +158,14 @@
                 <img src="images/button_validation_html5.png" width="88" height="31" alt="Validate webpage HTML.">
             </a>
 
-            <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css" class="validationbutton">
+            <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css"
+                class="validationbutton">
                 <img src="images/button_validation_css.png" width="88" height="31" alt="Validate webpage CSS.">
             </a>
 
         </p>
     </footer>
+    <script src="scripts/hfscripts.js"></script>
 </body>
 
 </html>

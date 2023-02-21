@@ -76,6 +76,12 @@ nav {
     margin: 1em auto;
 }
 
+nav.navbar {
+    text-decoration: none;
+    color: #644064ff;
+    font-weight: bold;
+}
+
 table.ct {
     background-color: rgb(139, 235, 238);
     text-align: center;
