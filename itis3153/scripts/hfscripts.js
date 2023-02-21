@@ -60,8 +60,6 @@ $(function() {
 });
 
 $(function() {
-    const pathname = String(location.pathname.split("/").splice(-1));
-    
     const links = {
         "1": {
             "url": "https://webpages.charlotte.edu/dhagen3/",
