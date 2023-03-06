@@ -60,6 +60,56 @@ $(function() {
 });
 
 $(function() {
+    const pathname = String(location.pathname.split("/").splice(-1));
+    
+    const links = {
+        "1": {
+            "url": "stuff/Wh@t The CRAP.htm",
+            "text": "CRAPpy Page",
+            "alt": "A Terrible Webpage"
+        },
+        "2": {
+            "url": "calculator_try.html",
+            "text": "Calculator Attempt",
+            "alt": "Calculator Attempt Page"
+        },
+        "3": {
+            "url": "calculator_fcc.html",
+            "text": "Calculator FCC",
+            "alt": "FCC Calculator Page"
+        },
+        "4": {
+            "url": "calculator_pt2.html",
+            "text": "Calculator Part 2",
+            "alt": "Another Calculator Page"
+        },
+        "5": {
+            "url": "polygons.html",
+            "text": "Polygons",
+            "alt": "Polygons Page"
+        }
+    };
+
+    const linkSeperator = "] [";
+    let htmlString = "[";
+
+    for (var id in links) {
+        if (pathname === links[id]['url']) {
+            htmlString += links[id]['text'];
+        } else {
+            htmlString += '<a href="'+links[id]['url']+'" alt="'+links[id]['alt']+'">'+links[id]['text']+'</a>';
+        }
+        if(Number(id) < Object.keys(links).length) {
+            htmlString += linkSeperator;
+        } else {
+            htmlString += ']'
+        }
+    }
+
+    $('#headerOtherLinks').html(htmlString);
+});
+
+$(function() {
     const links = {
         "1": {
             "url": "https://webpages.charlotte.edu/dhagen3/",
