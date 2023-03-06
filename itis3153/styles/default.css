@@ -65,6 +65,8 @@ figure {
 
 img {
     margin: 0 auto;
+    width: 100%;
+    height: auto;
 }
 
 figcaption {
@@ -148,13 +150,23 @@ div.scriptpagediv {
     text-align: center;
 }
 
+.sitename {
+    display: inline-flex;
+}
+
+
+
 /* 
  * X-Small devices (portrait phones, less than 576px)
  * No media query for `xs` since this is the default in Bootstrap
  */
 
 /* Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) {  }
+@media (min-width: 576px) { 
+    .sitename img {
+        display: none;
+    }
+ }
 
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {  }
@@ -163,7 +175,12 @@ div.scriptpagediv {
 @media (min-width: 992px) {  }
 
 /* X-Large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) {  }
+@media (min-width: 1200px) { 
+    .sitename img {
+        display:inline-flex;
+        width: min-content;
+    }
+ }
 
 /* XX-Large devices (larger desktops, 1400px and up)*/
 @media (min-width: 1400px) {  }
