@@ -65,6 +65,8 @@ figure {
 
 img {
     margin: 0 auto;
+}
+#dapperhippo {
     width: 100%;
     height: auto;
 }
@@ -150,9 +152,14 @@ div.scriptpagediv {
     text-align: center;
 }
 
-.sitename {
-    display: inline-flex;
+.sitename img {
+    display: none;
 }
+
+.divider {
+    border-bottom: 1px solid #38023bff;
+    margin: 2px 0;
+  }
 
 
 
@@ -162,11 +169,7 @@ div.scriptpagediv {
  */
 
 /* Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) { 
-    .sitename img {
-        display: none;
-    }
- }
+@media (min-width: 576px) {  }
 
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {  }
@@ -177,8 +180,10 @@ div.scriptpagediv {
 /* X-Large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) { 
     .sitename img {
-        display:inline-flex;
         width: min-content;
+    }
+    .sitename {
+        display:inline-flex;
     }
  }
 
