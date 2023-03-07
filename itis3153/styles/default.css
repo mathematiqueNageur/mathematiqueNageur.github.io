@@ -33,6 +33,7 @@ h2 {
     text-align: center;
     margin: 1em auto;
     line-height: 0px;
+    width: auto;
 }
 
 h3 {
@@ -156,8 +157,13 @@ div.scriptpagediv {
     display: none;
 }
 
+.sitename {
+    justify-content: center;
+    display: flex;
+}
+
 .divider {
-    border-bottom: 1px solid #38023bff;
+    border-bottom: 5px solid #38023bff;
     margin: 2px 0;
   }
 
@@ -180,10 +186,8 @@ div.scriptpagediv {
 /* X-Large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) { 
     .sitename img {
+        display: inline;
         width: min-content;
-    }
-    .sitename {
-        display:inline-flex;
     }
  }
 
