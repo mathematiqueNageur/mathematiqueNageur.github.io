@@ -84,7 +84,7 @@ $(function() {
             "alt": "Another Calculator Page"
         },
         "5": {
-            "url": "exercise/hagen-activity#6.html",
+            "url": "exercise/hagen-activity6.html",
             "text": "Polygons",
             "alt": "Polygons Page"
         }
