@@ -69,22 +69,22 @@ $(function() {
             "alt": "A Terrible Webpage"
         },
         "2": {
-            "url": "calculator_try.html",
+            "url": "exercise/calculator_try.html",
             "text": "Calculator Attempt",
             "alt": "Calculator Attempt Page"
         },
         "3": {
-            "url": "calculator_fcc.html",
+            "url": "exercise/calculator_fcc.html",
             "text": "Calculator FCC",
             "alt": "FCC Calculator Page"
         },
         "4": {
-            "url": "calculator_pt2.html",
+            "url": "exercise/calculator_pt2.html",
             "text": "Calculator Part 2",
             "alt": "Another Calculator Page"
         },
         "5": {
-            "url": "polygons.html",
+            "url": "exercise/hagen-activity#6.html",
             "text": "Polygons",
             "alt": "Polygons Page"
         }
