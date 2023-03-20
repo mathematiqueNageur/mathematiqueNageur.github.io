@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dale Hagen's Dapper Hippo</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <style>
+        /* 
+        * X-Small devices (portrait phones, less than 576px)
+        * No media query for `xs` since this is the default in Bootstrap
+        */
+
+        /* Small devices (landscape phones, 576px and up)*/
+        @media (min-width: 576px) {}
+
+        /* Medium devices (tablets, 768px and up)*/
+        @media (min-width: 768px) {}
+
+        /* Large devices (desktops, 992px and up)*/
+        @media (min-width: 992px) {}
+
+        /* X-Large devices (large desktops, 1200px and up)*/
+        @media (min-width: 1200px) {
+            .sitename img {
+                display: inline;
+                width: min-content;
+            }
+        }
+
+        /* XX-Large devices (larger desktops, 1400px and up)*/
+        @media (min-width: 1400px) {}
+
+        a.validationbutton,
+        a.validationbutton:hover {
+            text-decoration: none;
+        }
+
+        .divider {
+            border-bottom: 5px solid #38023bff;
+            margin: 2px 0;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h1 id="Title">Yah like Yu-Gi-Oh?</h1>
+        <nav>
+            <button onclick="changePage('page00')">Welcome Page</button>
+            <button onclick="changePage('page01')">Description Page</button>
+        </nav>
+    </header>
+    <main>
+        <div class="divider"></div>
+        <section id="page00">
+            <h2 id="welcomeTitle">Welcome!</h2>
+            <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet non esse cumque id. Beatae enim quae
+                    quasi consequuntur recusandae molestias minus obcaecati aspernatur consequatur, qui unde fugit,
+                    cumque exercitationem perferendis.</span><span>Similique omnis, nam quos, ratione vero distinctio,
+                    nisi eligendi corrupti cum fugit accusamus quis dolor! Hic, laborum magnam optio, placeat id aut
+                    rerum possimus, molestiae doloremque earum consectetur consequuntur quia.</span><span>Dignissimos
+                    possimus aspernatur molestiae qui, quaerat necessitatibus harum accusantium veniam ducimus
+                    distinctio corporis vero perspiciatis quos repellendus ad quo, totam unde. Perspiciatis placeat,
+                    aliquid dolore nihil magni commodi quae voluptate.</span><span>Odit delectus officiis magni enim?
+                    Natus, placeat qui facere laudantium laborum saepe quas aliquid atque impedit minima doloribus
+                    exercitationem, ducimus unde. Vero quo ex pariatur error quam explicabo labore
+                    atque?</span><span>Rem praesentium commodi excepturi mollitia rerum voluptatibus, magni optio
+                    veritatis vel laboriosam? Voluptates asperiores nesciunt mollitia assumenda ea autem quia aspernatur
+                    sapiente, modi maiores, recusandae minima qui natus esse reprehenderit.</span></p>
+
+        </section>
+        <section id="page01" hidden>
+            <h2>What is Yu-Gi-Oh?</h2>
+        </section>
+        <div class="divider"></div>
+    </main>
+    <footer>
+        <p>
+            <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html" class="validationbutton">
+                <img src="images/button_validation_html5.png" width="88" height="31" alt="Validate webpage HTML.">
+            </a>
+
+            <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css"
+                class="validationbutton">
+                <img src="images/button_validation_css.png" width="88" height="31" alt="Validate webpage CSS.">
+            </a>
+
+        </p>
+    </footer>
+    <script>
+        const PAGEIDs = ["page00", "page01", "page02", "page03", "page04", "page05"];
+
+        function changePage(pageID) {
+            document.getElementById(pageID).style.display = "block";
+            PAGEIDs.forEach(page => {
+                if (page != pageID) {
+                    document.getElementById(page).style.display = "none";
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
