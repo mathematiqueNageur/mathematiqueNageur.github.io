@@ -87,6 +87,11 @@ $(function() {
             "url": "exercise/hagen-activity6.html",
             "text": "Polygons",
             "alt": "Polygons Page"
+        },
+        "6": {
+            "url": "hobby/midtermhobbysite.html",
+            "text": "Hobby",
+            "alt": "Hobby Page"
         }
     };
 
