@@ -14,9 +14,24 @@
         * X-Small devices (portrait phones, less than 576px)
         * No media query for `xs` since this is the default in Bootstrap
         */
+        @media (max-width:575px) {
+            .menu {
+                display: flex;
+                flex-direction: column;
+                align-items: stretch;
+            }
+        }
 
         /* Small devices (landscape phones, 576px and up)*/
-        @media (min-width: 576px) {}
+        @media (min-width: 576px) {
+            .menu {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: stretch;
+                flex-wrap: nowrap;
+            }
+        }
 
         /* Medium devices (tablets, 768px and up)*/
         @media (min-width: 768px) {}
@@ -35,14 +50,40 @@
         /* XX-Large devices (larger desktops, 1400px and up)*/
         @media (min-width: 1400px) {}
 
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background: lavenderblush;
+            color: darkslateblue;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .menu button {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: darkslateblue;
+            padding: 0.5em 0.5em;
+            border: 2px solid darkslategrey;
+            border-radius: 5px;
+            background-color:lightsteelblue;
+            transition-duration: 0.2s;
+            margin: auto 0.05%;
+        }
+
+        .menu button:hover {
+            background-color: lavenderblush;
+        }
+
         a.validationbutton,
         a.validationbutton:hover {
             text-decoration: none;
         }
 
         .divider {
-            border-bottom: 5px solid #38023bff;
+            border-bottom: 5px solid darkslategrey;
             margin: 2px 0;
+            padding: 0;
         }
     </style>
 
@@ -50,18 +91,18 @@
 
 <body>
     <header>
-        <h1 id="Title">Yah like Yu-Gi-Oh?</h1>
-        <nav>
+        <h1 id="Title">Yah like Collections?</h1>
+        <nav class="menu">
             <button onclick="changePage('page00')">Welcome Page</button>
-            <button onclick="changePage('page01')">Description Page</button>
-            <button onclick="changePage('page02')">Welcome Page</button>
-            <button onclick="changePage('page03')">Welcome Page</button>
-            <button onclick="changePage('page04')">Welcome Page</button>
-            <button onclick="changePage('page05')">Welcome Page</button>
+            <button onclick="changePage('page01')">Yu-Gi-Oh</button>
+            <button onclick="changePage('page02')">Pokemon</button>
+            <button onclick="changePage('page03')">Magic the Gathering</button>
+            <button onclick="changePage('page04')">Skyrim</button>
+            <button onclick="changePage('page05')">Minecraft</button>
         </nav>
+        <div class="divider"></div>
     </header>
     <main>
-        <div class="divider"></div>
         <section id="page00">
             <h2 id="welcomeTitle">Welcome!</h2>
             <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet non esse cumque id. Beatae enim quae
@@ -81,10 +122,157 @@
         </section>
         <section id="page01" hidden>
             <h2>What is Yu-Gi-Oh?</h2>
+            <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet non esse cumque id. Beatae enim quae
+                    quasi consequuntur recusandae molestias minus obcaecati aspernatur consequatur, qui unde fugit,
+                    cumque exercitationem perferendis.</span><span>Similique omnis, nam quos, ratione vero distinctio,
+                    nisi eligendi corrupti cum fugit accusamus quis dolor! Hic, laborum magnam optio, placeat id aut
+                    rerum possimus, molestiae doloremque earum consectetur consequuntur quia.</span><span>Dignissimos
+                    possimus aspernatur molestiae qui, quaerat necessitatibus harum accusantium veniam ducimus
+                    distinctio corporis vero perspiciatis quos repellendus ad quo, totam unde. Perspiciatis placeat,
+                    aliquid dolore nihil magni commodi quae voluptate.</span><span>Odit delectus officiis magni enim?
+                    Natus, placeat qui facere laudantium laborum saepe quas aliquid atque impedit minima doloribus
+                    exercitationem, ducimus unde. Vero quo ex pariatur error quam explicabo labore
+                    atque?</span><span>Rem praesentium commodi excepturi mollitia rerum voluptatibus, magni optio
+                    veritatis vel laboriosam? Voluptates asperiores nesciunt mollitia assumenda ea autem quia aspernatur
+                    sapiente, modi maiores, recusandae minima qui natus esse reprehenderit.</span></p>
+            <h3>How do I collect it?</h3>
+            <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet non esse cumque id. Beatae enim quae
+                    quasi consequuntur recusandae molestias minus obcaecati aspernatur consequatur, qui unde fugit,
+                    cumque exercitationem perferendis.</span><span>Similique omnis, nam quos, ratione vero distinctio,
+                    nisi eligendi corrupti cum fugit accusamus quis dolor! Hic, laborum magnam optio, placeat id aut
+                    rerum possimus, molestiae doloremque earum consectetur consequuntur quia.</span><span>Dignissimos
+                    possimus aspernatur molestiae qui, quaerat necessitatibus harum accusantium veniam ducimus
+                    distinctio corporis vero perspiciatis quos repellendus ad quo, totam unde. Perspiciatis placeat,
+                    aliquid dolore nihil magni commodi quae voluptate.</span><span>Odit delectus officiis magni enim?
+                    Natus, placeat qui facere laudantium laborum saepe quas aliquid atque impedit minima doloribus
+                    exercitationem, ducimus unde. Vero quo ex pariatur error quam explicabo labore
+                    atque?</span><span>Rem praesentium commodi excepturi mollitia rerum voluptatibus, magni optio
+                    veritatis vel laboriosam? Voluptates asperiores nesciunt mollitia assumenda ea autem quia aspernatur
+                    sapiente, modi maiores, recusandae minima qui natus esse reprehenderit.</span></p>
         </section>
-        <div class="divider"></div>
+        <section id="page02" hidden>
+            <h2>What is Pokemon?</h2>
+            <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet non esse cumque id. Beatae enim quae
+                    quasi consequuntur recusandae molestias minus obcaecati aspernatur consequatur, qui unde fugit,
+                    cumque exercitationem perferendis.</span><span>Similique omnis, nam quos, ratione vero distinctio,
+                    nisi eligendi corrupti cum fugit accusamus quis dolor! Hic, laborum magnam optio, placeat id aut
+                    rerum possimus, molestiae doloremque earum consectetur consequuntur quia.</span><span>Dignissimos
+                    possimus aspernatur molestiae qui, quaerat necessitatibus harum accusantium veniam ducimus
+                    distinctio corporis vero perspiciatis quos repellendus ad quo, totam unde. Perspiciatis placeat,
+                    aliquid dolore nihil magni commodi quae voluptate.</span><span>Odit delectus officiis magni enim?
+                    Natus, placeat qui facere laudantium laborum saepe quas aliquid atque impedit minima doloribus
+                    exercitationem, ducimus unde. Vero quo ex pariatur error quam explicabo labore
+                    atque?</span><span>Rem praesentium commodi excepturi mollitia rerum voluptatibus, magni optio
+                    veritatis vel laboriosam? Voluptates asperiores nesciunt mollitia assumenda ea autem quia aspernatur
+                    sapiente, modi maiores, recusandae minima qui natus esse reprehenderit.</span></p>
+            <h3>How do I collect it?</h3>
+            <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet non esse cumque id. Beatae enim quae
+                    quasi consequuntur recusandae molestias minus obcaecati aspernatur consequatur, qui unde fugit,
+                    cumque exercitationem perferendis.</span><span>Similique omnis, nam quos, ratione vero distinctio,
+                    nisi eligendi corrupti cum fugit accusamus quis dolor! Hic, laborum magnam optio, placeat id aut
+                    rerum possimus, molestiae doloremque earum consectetur consequuntur quia.</span><span>Dignissimos
+                    possimus aspernatur molestiae qui, quaerat necessitatibus harum accusantium veniam ducimus
+                    distinctio corporis vero perspiciatis quos repellendus ad quo, totam unde. Perspiciatis placeat,
+                    aliquid dolore nihil magni commodi quae voluptate.</span><span>Odit delectus officiis magni enim?
+                    Natus, placeat qui facere laudantium laborum saepe quas aliquid atque impedit minima doloribus
+                    exercitationem, ducimus unde. Vero quo ex pariatur error quam explicabo labore
+                    atque?</span><span>Rem praesentium commodi excepturi mollitia rerum voluptatibus, magni optio
+                    veritatis vel laboriosam? Voluptates asperiores nesciunt mollitia assumenda ea autem quia aspernatur
+                    sapiente, modi maiores, recusandae minima qui natus esse reprehenderit.</span></p>
+        </section>
+        <section id="page03" hidden>
+            <h2>What is Yu-Gi-Oh?</h2>
+            <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet non esse cumque id. Beatae enim quae
+                    quasi consequuntur recusandae molestias minus obcaecati aspernatur consequatur, qui unde fugit,
+                    cumque exercitationem perferendis.</span><span>Similique omnis, nam quos, ratione vero distinctio,
+                    nisi eligendi corrupti cum fugit accusamus quis dolor! Hic, laborum magnam optio, placeat id aut
+                    rerum possimus, molestiae doloremque earum consectetur consequuntur quia.</span><span>Dignissimos
+                    possimus aspernatur molestiae qui, quaerat necessitatibus harum accusantium veniam ducimus
+                    distinctio corporis vero perspiciatis quos repellendus ad quo, totam unde. Perspiciatis placeat,
+                    aliquid dolore nihil magni commodi quae voluptate.</span><span>Odit delectus officiis magni enim?
+                    Natus, placeat qui facere laudantium laborum saepe quas aliquid atque impedit minima doloribus
+                    exercitationem, ducimus unde. Vero quo ex pariatur error quam explicabo labore
+                    atque?</span><span>Rem praesentium commodi excepturi mollitia rerum voluptatibus, magni optio
+                    veritatis vel laboriosam? Voluptates asperiores nesciunt mollitia assumenda ea autem quia aspernatur
+                    sapiente, modi maiores, recusandae minima qui natus esse reprehenderit.</span></p>
+            <h3>How do I collect it?</h3>
+            <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet non esse cumque id. Beatae enim quae
+                    quasi consequuntur recusandae molestias minus obcaecati aspernatur consequatur, qui unde fugit,
+                    cumque exercitationem perferendis.</span><span>Similique omnis, nam quos, ratione vero distinctio,
+                    nisi eligendi corrupti cum fugit accusamus quis dolor! Hic, laborum magnam optio, placeat id aut
+                    rerum possimus, molestiae doloremque earum consectetur consequuntur quia.</span><span>Dignissimos
+                    possimus aspernatur molestiae qui, quaerat necessitatibus harum accusantium veniam ducimus
+                    distinctio corporis vero perspiciatis quos repellendus ad quo, totam unde. Perspiciatis placeat,
+                    aliquid dolore nihil magni commodi quae voluptate.</span><span>Odit delectus officiis magni enim?
+                    Natus, placeat qui facere laudantium laborum saepe quas aliquid atque impedit minima doloribus
+                    exercitationem, ducimus unde. Vero quo ex pariatur error quam explicabo labore
+                    atque?</span><span>Rem praesentium commodi excepturi mollitia rerum voluptatibus, magni optio
+                    veritatis vel laboriosam? Voluptates asperiores nesciunt mollitia assumenda ea autem quia aspernatur
+                    sapiente, modi maiores, recusandae minima qui natus esse reprehenderit.</span></p>
+        </section>
+        <section id="page04" hidden>
+            <h2>What is Yu-Gi-Oh?</h2>
+            <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet non esse cumque id. Beatae enim quae
+                    quasi consequuntur recusandae molestias minus obcaecati aspernatur consequatur, qui unde fugit,
+                    cumque exercitationem perferendis.</span><span>Similique omnis, nam quos, ratione vero distinctio,
+                    nisi eligendi corrupti cum fugit accusamus quis dolor! Hic, laborum magnam optio, placeat id aut
+                    rerum possimus, molestiae doloremque earum consectetur consequuntur quia.</span><span>Dignissimos
+                    possimus aspernatur molestiae qui, quaerat necessitatibus harum accusantium veniam ducimus
+                    distinctio corporis vero perspiciatis quos repellendus ad quo, totam unde. Perspiciatis placeat,
+                    aliquid dolore nihil magni commodi quae voluptate.</span><span>Odit delectus officiis magni enim?
+                    Natus, placeat qui facere laudantium laborum saepe quas aliquid atque impedit minima doloribus
+                    exercitationem, ducimus unde. Vero quo ex pariatur error quam explicabo labore
+                    atque?</span><span>Rem praesentium commodi excepturi mollitia rerum voluptatibus, magni optio
+                    veritatis vel laboriosam? Voluptates asperiores nesciunt mollitia assumenda ea autem quia aspernatur
+                    sapiente, modi maiores, recusandae minima qui natus esse reprehenderit.</span></p>
+            <h3>How do I collect it?</h3>
+            <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet non esse cumque id. Beatae enim quae
+                    quasi consequuntur recusandae molestias minus obcaecati aspernatur consequatur, qui unde fugit,
+                    cumque exercitationem perferendis.</span><span>Similique omnis, nam quos, ratione vero distinctio,
+                    nisi eligendi corrupti cum fugit accusamus quis dolor! Hic, laborum magnam optio, placeat id aut
+                    rerum possimus, molestiae doloremque earum consectetur consequuntur quia.</span><span>Dignissimos
+                    possimus aspernatur molestiae qui, quaerat necessitatibus harum accusantium veniam ducimus
+                    distinctio corporis vero perspiciatis quos repellendus ad quo, totam unde. Perspiciatis placeat,
+                    aliquid dolore nihil magni commodi quae voluptate.</span><span>Odit delectus officiis magni enim?
+                    Natus, placeat qui facere laudantium laborum saepe quas aliquid atque impedit minima doloribus
+                    exercitationem, ducimus unde. Vero quo ex pariatur error quam explicabo labore
+                    atque?</span><span>Rem praesentium commodi excepturi mollitia rerum voluptatibus, magni optio
+                    veritatis vel laboriosam? Voluptates asperiores nesciunt mollitia assumenda ea autem quia aspernatur
+                    sapiente, modi maiores, recusandae minima qui natus esse reprehenderit.</span></p>
+        </section>
+        <section id="page05" hidden>
+            <h2>What is Yu-Gi-Oh?</h2>
+            <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet non esse cumque id. Beatae enim quae
+                    quasi consequuntur recusandae molestias minus obcaecati aspernatur consequatur, qui unde fugit,
+                    cumque exercitationem perferendis.</span><span>Similique omnis, nam quos, ratione vero distinctio,
+                    nisi eligendi corrupti cum fugit accusamus quis dolor! Hic, laborum magnam optio, placeat id aut
+                    rerum possimus, molestiae doloremque earum consectetur consequuntur quia.</span><span>Dignissimos
+                    possimus aspernatur molestiae qui, quaerat necessitatibus harum accusantium veniam ducimus
+                    distinctio corporis vero perspiciatis quos repellendus ad quo, totam unde. Perspiciatis placeat,
+                    aliquid dolore nihil magni commodi quae voluptate.</span><span>Odit delectus officiis magni enim?
+                    Natus, placeat qui facere laudantium laborum saepe quas aliquid atque impedit minima doloribus
+                    exercitationem, ducimus unde. Vero quo ex pariatur error quam explicabo labore
+                    atque?</span><span>Rem praesentium commodi excepturi mollitia rerum voluptatibus, magni optio
+                    veritatis vel laboriosam? Voluptates asperiores nesciunt mollitia assumenda ea autem quia aspernatur
+                    sapiente, modi maiores, recusandae minima qui natus esse reprehenderit.</span></p>
+            <h3>How do I collect it?</h3>
+            <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet non esse cumque id. Beatae enim quae
+                    quasi consequuntur recusandae molestias minus obcaecati aspernatur consequatur, qui unde fugit,
+                    cumque exercitationem perferendis.</span><span>Similique omnis, nam quos, ratione vero distinctio,
+                    nisi eligendi corrupti cum fugit accusamus quis dolor! Hic, laborum magnam optio, placeat id aut
+                    rerum possimus, molestiae doloremque earum consectetur consequuntur quia.</span><span>Dignissimos
+                    possimus aspernatur molestiae qui, quaerat necessitatibus harum accusantium veniam ducimus
+                    distinctio corporis vero perspiciatis quos repellendus ad quo, totam unde. Perspiciatis placeat,
+                    aliquid dolore nihil magni commodi quae voluptate.</span><span>Odit delectus officiis magni enim?
+                    Natus, placeat qui facere laudantium laborum saepe quas aliquid atque impedit minima doloribus
+                    exercitationem, ducimus unde. Vero quo ex pariatur error quam explicabo labore
+                    atque?</span><span>Rem praesentium commodi excepturi mollitia rerum voluptatibus, magni optio
+                    veritatis vel laboriosam? Voluptates asperiores nesciunt mollitia assumenda ea autem quia aspernatur
+                    sapiente, modi maiores, recusandae minima qui natus esse reprehenderit.</span></p>
+        </section>
     </main>
     <footer>
+        <div class="divider"></div>
         <p>
             <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html" class="validationbutton">
                 <img src="images/button_validation_html5.png" width="88" height="31" alt="Validate webpage HTML.">
