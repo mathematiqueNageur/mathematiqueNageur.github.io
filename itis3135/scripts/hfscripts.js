@@ -132,7 +132,7 @@ $(function() {
             "alt": "mathematiqueNageur's GitHub.io Page"
         },
         "4": {
-            "url": "https://mathematiqueNageur.github.io/itis3135/",
+            "url": "https://mathematiqueNageur.github.io/itis3135/index.html",
             "text": "Course.io",
             "alt": "mathematiqueNageur's ITIS 3135 GitHub.io Page"
         },
