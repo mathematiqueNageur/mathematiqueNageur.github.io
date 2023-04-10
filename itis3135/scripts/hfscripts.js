@@ -118,8 +118,8 @@ $(function() {
     const links = {
         "1": {
             "url": "https://webpages.charlotte.edu/dhagen3/",
-            "text": "CIT Webspace",
-            "alt": "CIT Webspace"
+            "text": "UNCC Home",
+            "alt": "UNCC Home"
         },
         "2": {
             "url": "https://github.com/mathematiqueNageur",
@@ -132,16 +132,21 @@ $(function() {
             "alt": "mathematiqueNageur's GitHub.io Page"
         },
         "4": {
+            "url": "https://mathematiqueNageur.github.io/itis3135/",
+            "text": "Course.io",
+            "alt": "mathematiqueNageur's ITIS 3135 GitHub.io Page"
+        },
+        "5": {
             "url": "https://www.freecodecamp.org/dxhagen",
             "text": "freecodecamp",
             "alt": "My freecodecamp Page"
         },
-        "5": {
+        "6": {
             "url": "https://www.codecademy.com/profiles/dxhagen",
             "text": "Codecademy",
             "alt": "My Codecademy Page"
         },
-        "6": {
+        "7": {
             "url": "https://www.linkedin.com/in/dalehagen/",
             "text": "LinkedIn",
             "alt": "My LinkedIn Page"
