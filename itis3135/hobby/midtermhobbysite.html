@@ -80,6 +80,15 @@
             text-decoration: none;
         }
 
+        div.validationbutton {
+            display: flex;
+            align-content: flex-start;
+            justify-content: center;
+            flex-wrap: wrap;
+            flex-direction: row;
+            align-items: flex-start;
+        }
+
         .divider {
             border-bottom: 5px solid darkslategrey;
             margin: 2px 0;
@@ -260,7 +269,7 @@
     </main>
     <footer>
         <div class="divider"></div>
-        <p>
+        <div class="validationbutton">
             <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html" class="validationbutton">
                 <img src="images/button_validation_html5.png" width="88" height="31" alt="Validate webpage HTML.">
             </a>
@@ -269,8 +278,7 @@
                 class="validationbutton">
                 <img src="images/button_validation_css.png" width="88" height="31" alt="Validate webpage CSS.">
             </a>
-
-        </p>
+        </div>
     </footer>
     <script>
         const PAGEIDs = ["page00", "page01", "page02", "page03", "page04", "page05"];
